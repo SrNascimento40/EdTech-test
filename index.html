@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <title>EdTech</title>
+</head>
+
+<body>
+    <div>
+        <p>Palavra</p>
+        <button id="btn1">remove test</button>
+        <button id="btn2">insert text</button>
+        <button id="btn3">white theme</button>
+        <button id="btn4">dark theme</button>
+    </div>
+</body>
+<script>
+    $('p').append(' para testar jQuery')
+    $('#btn1').on('click', removeText)
+    $('#btn2').on('click', insertText)
+    $('#btn3').on('click', whiteTheme)
+    $('#btn4').on('click', darkTheme)
+    function removeText() {
+        $('p').fadeOut("3000")
+    }
+    function insertText() {
+        $('p').fadeIn("2000")
+    }
+    function whiteTheme() {
+        $('body').css({ 'height': '100%', 'width': '100%', 'background-color': 'white', 'color': 'black' })
+    }
+    function darkTheme() {
+        $('body').css({ 'height': '100%', 'width': '100%', 'background-color': 'black', 'color': 'white' })
+    }
+</script>
+
+</html>
