@@ -8,35 +8,74 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
         integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <title>EdTech</title>
+    <link rel="stylesheet" href="./Resources/css/style.css">
 </head>
 
 <body>
-    <div>
-        <p>Palavra</p>
-        <button id="btn1">remove test</button>
-        <button id="btn2">insert text</button>
-        <button id="btn3">white theme</button>
-        <button id="btn4">dark theme</button>
+    <div id="initialContainer">
+        <img src="" alt="Dot logo" />
+        <h1>LOREM IPSUM</h1>
+        <h2>LOREM IPSUM ADVET GRAVI OTM</h2>
     </div>
+    <div id="initialContainer">
+        <h3>Lorem Ipsum</h3>
+        <div>
+            <img src="" alt="suitcase" />
+            <div>
+                <p>Lorem ipsum dolor sit amet. consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ul
+                    laoreet dolore magna aliquam erat volutpat</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet. consectetso</li>
+                    <li>Lorem ipsum dolor sit amet. consectetso</li>
+                    <li>Lorem ipsum dolor sit amet. consectetso</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="DropdownContainer">
+        <h3>Dropdown</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea co</p>
+        <div id="dropdownDiv">
+            <div class="dropdown">dropdown</div>
+            <div class="dropdown">dropdown</div>
+            <div class="dropdown">dropdown</div>
+        </div>
+    </div>
+    <div id="textContainer">
+        <h4>Lorem Ipsum</h4>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+            <img src="" alt="office with chairs and computers" />
+        </div>
+    </div>
+    <div id="diagramContainer">
+        <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+        </p>
+        <img src="" alt="diagram" />
+    </div>
+    <footer>
+        <img src="" alt="Dot logo" />
+    </footer>
 </body>
 <script>
-    $('p').append(' para testar jQuery')
-    $('#btn1').on('click', removeText)
-    $('#btn2').on('click', insertText)
-    $('#btn3').on('click', whiteTheme)
-    $('#btn4').on('click', darkTheme)
-    function removeText() {
-        $('p').fadeOut("3000")
-    }
-    function insertText() {
-        $('p').fadeIn("2000")
-    }
-    function whiteTheme() {
-        $('body').css({ 'height': '100%', 'width': '100%', 'background-color': 'white', 'color': 'black' })
-    }
-    function darkTheme() {
-        $('body').css({ 'height': '100%', 'width': '100%', 'background-color': 'black', 'color': 'white' })
-    }
+    // $('p').append(' para testar jQuery')
+    // $('#btn1').on('click', removeText)
+    // $('#btn2').on('click', insertText)
+    // $('#btn3').on('click', whiteTheme)
+    // $('#btn4').on('click', darkTheme)
+    // function removeText() {
+    //     $('p').fadeOut("3000")
+    // }
+    // function insertText() {
+    //     $('p').fadeIn("2000")
+    // }
+    // function whiteTheme() {
+    //     $('body').css({ 'height': '100%', 'width': '100%', 'background-color': 'white', 'color': 'black' })
+    // }
+    // function darkTheme() {
+    //     $('body').css({ 'height': '100%', 'width': '100%', 'background-color': 'black', 'color': 'white' })
+    // }
 </script>
 
 </html>
