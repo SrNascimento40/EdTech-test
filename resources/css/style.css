@@ -12,7 +12,10 @@
     --textMedium: 1.12rem;
     --textSmall: 1rem;
     /* Color pattern */
-
+    --purple: #7a2b58;
+    --cyan: #03b5b0;
+    --yellow: #ffcc33;
+    --dark: #353535;
 }
 
 body {
@@ -35,7 +38,7 @@ body {
     background-size: cover;
     background-position: center;
 
-    color: #fff;
+    color: #FFF;
 }
 
 #headerLogo {
@@ -51,4 +54,59 @@ h1 {
 h2 {
     font-size: var(--textMedium);
     font-weight: 400;
+}
+
+h3 {
+    font-size: var(--textLarge);
+    color: var(--yellow);
+    text-align: center;
+}
+
+p {
+    font-size: var(--textSmall);
+    color: #FFF;
+}
+
+#suitcaseContainer {
+    background-color: var(--purple);
+    justify-content: center;
+    display: flex;
+}
+
+#desktopTitle {
+    display: none;
+}
+
+#suitcaseContainer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+
+    border-radius: 20px;
+    border: solid 2px #FFF;
+
+    color: #FFF;
+}
+
+#suitcase {
+    width: 121px;
+    margin-bottom: 50px;
+}
+
+#DropdownContainer {
+    background-color: var(--cyan);
+}
+
+#textContainer {
+    background-color: var(--dark);
+}
+
+#diagramContainer {
+    background-color: #FFF;
+}
+
+footer {
+    background-color: var(--purple);
 }
