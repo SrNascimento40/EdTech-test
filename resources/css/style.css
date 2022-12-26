@@ -13,9 +13,9 @@
     --textMedium: 1.12rem;
     --textSmall: 1rem;
     /* Color pattern */
-    --purple: #7a2b58;
-    --cyan: #03b5b0;
-    --yellow: #ffcc33;
+    --purple: #7A2B58;
+    --cyan: #03B5B0;
+    --yellow: #FFCC33;
     --dark: #353535;
 }
 
@@ -61,6 +61,13 @@ h3 {
     font-size: var(--textLarge);
     color: var(--yellow);
     text-align: center;
+}
+
+h4 {
+    font-size: 1.5rem;
+    color: var(--cyan);
+    text-align: center;
+    font-weight: bold;
 }
 
 p {
@@ -129,21 +136,75 @@ img {
 #blueDecor {
     height: 64px;
     margin-right: auto;
-    display: flex;
 }
 
 #DropdownContainer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 35px;
+    align-items: center;
+    max-width: none;
+
     background-color: var(--cyan);
+}
+
+#DropdownContainer h3 {
+    display: none;
+}
+
+#DropdownContainer p {
+    margin: 0 19px 35px 20px;
+}
+
+.dropdown {
+    width: 83vw;
+    height: 76vw;
+    background-color: #FFF;
+
+    margin: 0 auto 35px;
+    padding: 37px 60px 40px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+#brownDecor {
+    height: 64px;
+    margin-left: auto;
+    margin-bottom: -1px;
+}
+
+.dropdownText {
+    color: var(--purple);
+    display: none;
 }
 
 #textContainer {
     background-color: var(--dark);
+    padding: 42px 0 39px;
+}
+
+#officeImg {
+    background-color: var(--dark);
+    padding: 33px 0 52px;
+}
+
+#textContainer p {
+    padding-left: 23px;
+    padding-right: 19px;
 }
 
 #diagramContainer {
     background-color: #FFF;
+    color: #707070;
+}
+
+#diagramContainer p {
+    margin: 35px 19px 40px 20px;
+    color: #707070;
 }
 
 footer {
     background-color: var(--purple);
+    padding: 114px 60px;
 }
