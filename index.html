@@ -15,52 +15,90 @@
 </head>
 
 <body>
-    <div id="initialContainer">
-        <img id="headerLogo" src="./resources/icons/icon-logo-header.svg" alt="Dot logo" />
+    <div class="initial-container">
+        <img class="initial-container-logo" src="./resources/icons/icon-logo-header.svg" alt="DOT logo" />
         <h1>LOREM IPSUM</h1>
         <h2>LOREM IPSUM ADVET GRAVI OTM</h2>
     </div>
-    <div id="suitcaseContainer">
-        <h3 id="desktopTitle">Lorem Ipsum</h3>
-        <img src="./resources/icons/suitcase.svg" alt="suitcase" id="suitcase" />
+    <div class="suitcase-container">
+        <h3 class="suitcase-container-title-desktop">Lorem Ipsum</h3>
+        <img src="./resources/icons/suitcase.svg" alt="suitcase" class="suitcase-container-image" />
         <div>
-            <h3 id="mobileTitle">Lorem Ipsum</h3>
+            <h3>Lorem Ipsum</h3>
             <p>Lorem ipsum dolor sit amet. consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ul
                 laoreet dolore magna aliquam erat volutpat</p>
             <ul>
-                <span class="spanUl">■</span>
+                <span>■</span>
                 <li> Lorem ipsum dolor sit amet. consectetso</li>
-                <span class="spanUl">■</span>
+                <span>■</span>
                 <li> Lorem ipsum dolor sit amet. consectetso</li>
-                <span class="spanUl">■</span>
+                <span>■</span>
                 <li> Lorem ipsum dolor sit amet. consectetso</li>
             </ul>
         </div>
-        <img src="./resources/icons/icon-blue.png" id="blueDecor" />
+        <img src="./resources/icons/icon-blue.png" class="suitcase-container-decoration" />
     </div>
     </div>
-    <div id="DropdownContainer">
+    <div class="dropdown-container">
         <h3>Dropdown</h3>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
             dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
             suscipit lobortis nisl ut aliquip ex ea co</p>
-        <div class="dropdown">
-            <img src="./resources/icons/icon-02.svg" />
-            <p class="dropdownText">Dropdown text que terá quando dropar para down</p>
+        <div class="dropdown-container-drop">
+            <img src="./resources/icons/icon-02.svg" alt="mulher interagindo com um mapa digital"
+                class="dropdown-container-drop-image" />
+            <div class="dropdown-container-drop-open">
+                <div class="dropdown-container-drop-open-purple-bar">
+                    <a class="dropdown-container-drop-open-purple-bar-button">
+                        <img src="./resources/icons/icon-arrow-up.svg"
+                            class="dropdown-container-drop-open-purple-bar-button-arrow-open" />
+                    </a>
+                    <div>
+                        <p class="dropdown-container-drop-open-purple-bar-text">
+                            Dropdown text que terá quando dropar para down
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="dropdown">
-            <img src="./resources/icons/icon-03.svg" />
-            <p class="dropdownText">Dropdown text que terá quando dropar para down</p>
+        <div class="dropdown-container-drop">
+            <img src="./resources/icons/icon-03.svg" alt="pasta de arquivos" class="dropdown-container-drop-image" />
+            <div class="dropdown-container-drop-open">
+                <div class="dropdown-container-drop-open-purple-bar">
+                    <a class="dropdown-container-drop-open-purple-bar-button">
+                        <img src="./resources/icons/icon-arrow-down.svg"
+                            class="dropdown-container-drop-open-purple-bar-button-arrow" />
+                    </a>
+                    <div>
+                        <p class="dropdown-container-drop-open-purple-bar-text">
+                            Dropdown text que terá quando dropar para down
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="dropdown">
-            <img src="./resources/icons/icon-04.svg" />
-            <p class="dropdownText">Dropdown text que terá quando dropar para down</p>
+        <div class="dropdown-container-drop">
+            <img src="./resources/icons/icon-04.svg" alt="3 pessoas em uma mesa e uma lâmpada simbolizando ideias"
+                class="dropdown-container-drop-image" />
+            <div class="dropdown-container-drop-open">
+                <div class="dropdown-container-drop-open-purple-bar">
+                    <a class="dropdown-container-drop-open-purple-bar-button">
+                        <img src="./resources/icons/icon-arrow-down.svg"
+                            class="dropdown-container-drop-open-purple-bar-button-arrow" />
+                    </a>
+                    <div>
+                        <p class="dropdown-container-drop-open-purple-bar-text">
+                            Dropdown text que terá quando dropar para down
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <img src="./resources/icons/icon-brown.png" id="brownDecor" />
+        <img src="./resources/icons/icon-brown.png" class="dropdown-container-decoration" />
     </div>
-    <div id="textContainer">
+    <div class="text-container">
         <h4>Lorem Ipsum</h4>
-        <img src="./resources/images/img-01.png" alt="office with chairs and computers" id="officeImg" />
+        <img src="./resources/images/img-01.png" alt="office with chairs and computers" ass="text-container-img" />
         <div>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
                 laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
@@ -70,7 +108,7 @@
                 dolore te feugait nulla facilisi.</p>
         </div>
     </div>
-    <div id="diagramContainer">
+    <div class="diagram-container">
         <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
             dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
@@ -79,10 +117,10 @@
             accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait
             nulla facilisi.
         </p>
-        <img src="" alt="diagram" />
+        <img src="./resources/images/diagram.png" alt="diagram" />
     </div>
     <footer>
-        <img src="./resources/icons/icon-logo-footer.svg" alt="Dot logo" />
+        <img src="./resources/icons/icon-logo-footer.svg" alt="DOT logo" />
     </footer>
 </body>
 <script>

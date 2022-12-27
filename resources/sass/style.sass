@@ -1,0 +1,184 @@
+@use 'variables'
+@use 'mixins'
+
+*
+    font-family: 'Raleway', sans-serif
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    list-style: none
+
+body
+    width: 100%
+    height: 100%
+
+.initial-container
+    width: 100%
+    height: 480px
+    padding: 55px 0
+
+    @include mixins.flex-center
+    flex-direction: column
+
+    background-image: url(../images/header-1920.png)
+    background-size: cover
+    background-position: center
+    color: #FFF
+    text-align: center
+
+    &-logo
+        width: 140px
+        padding-bottom: 115px
+
+h1
+    font-size: variables.$text-xLarge
+    font-weight: bold
+
+h2
+    font-size: variables.$text-medium
+    font-weight: 400
+
+h3
+    font-size: variables.$text-large
+    color: variables.$yellow
+    text-align: center
+
+h4
+    font-size: 1.5rem
+    color: variables.$cyan
+    text-align: center
+    font-weight: bold
+
+p
+    font-size: variables.$text-small
+    color: #FFF
+
+img
+    max-width: 100%
+
+.suitcase-container
+    background-color: variables.$purple
+    justify-content: center
+    display: flex
+    flex-wrap: wrap
+    padding-top: 35px
+
+    &-title-desktop
+        display: none
+
+    &-image
+        position: absolute
+        width: 121px
+
+    div
+        display: flex
+        flex-direction: column
+        margin: 50px 20px 62px
+        padding: 90px 0px 45px
+        border-radius: 20px
+        border: solid 2px #FFF
+        color: #FFF
+
+        h3
+            margin-bottom: 28px
+
+        p
+            margin-bottom: 1rem
+            margin-left: 20px
+
+        ul
+            margin-left: 20px
+
+            span
+                color: variables.$yellow
+                font-size: 8px
+                position: absolute
+                margin-top: 4px
+
+            li
+                position: relative
+                margin-left: 15px
+
+    &-decoration
+        height: 64px
+        margin-right: auto
+
+.dropdown-container
+
+    @include mixins.flex-center
+    flex-direction: column
+
+    padding-top: 35px
+    background-color: variables.$cyan
+
+    h3
+        display: none
+
+    p
+        margin: 0 19px 35px 20px
+
+    &-drop
+        width: 83vw
+        height: 76vw
+        background-color: #FFF
+        margin: 0 auto 35px
+        padding-top: 37px
+        display: flex
+        flex-direction: column
+        border-radius: 20px
+
+        &-image
+            width: 50%
+            margin: auto auto
+
+        &-open
+            position: relative
+            top: 0px
+
+            &-purple-bar
+                width: 100%
+                height: 2.5rem
+                background-color: variables.$purple
+                border-radius: 0 0 20px 20px
+
+                @include mixins.flex-center
+                justify-content: center
+                
+                &-button
+                    cursor: pointer
+
+                &-text
+                    color: variables.$purple
+                    display: none
+
+    &-decoration
+        height: 64px
+        margin-left: auto
+        margin-bottom: -1px
+
+.text-container
+    background-color: variables.$dark
+    padding: 42px 0 39px
+
+    p
+        padding-left: 23px
+        padding-right: 19px
+
+    &-img
+        background-color: variables.$dark
+        padding: 33px 0 52px
+
+.diagram-container
+    background-color: #FFF
+    color: #707070
+
+    @include mixins.flex-center
+    flex-direction: column
+
+    p
+        margin: 35px 19px 40px 20px
+        color: #707070
+
+footer
+    background-color: variables.$purple
+    padding: 114px 60px
